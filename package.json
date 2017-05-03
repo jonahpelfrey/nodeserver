@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Jonah Pelfrey",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "crypto": "0.0.3",
+    "express": "^4.15.2",
+    "http": "0.0.0",
+    "mongoose": "^4.9.3",
+    "morgan": "^1.8.1",
+    "path": "^0.12.7",
+    "request": "^2.81.0",
+    "socket.io": "^1.7.3"
+  }
+}

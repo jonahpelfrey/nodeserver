@@ -1,0 +1,46 @@
+<div class="row">
+	<div class="col-md-6">
+		<div class="panel panel-default">
+			<div class="panel-heading">Register</div>
+			<div class="panel-body">
+				<div class="input-group" style="margin-bottom: 10px;">
+					<span class="input-group-addon"><i class="fa fa-user"></i></span>
+					<input ng-model="name" class="form-control" placeholder="Name">
+				</div>
+				<div class="input-group" style="margin-bottom: 10px;">
+					<span class="input-group-addon"><i class="fa fa-user"></i></span>
+					<input ng-model="token" class="form-control" placeholder="Token">
+				</div>
+				<div class="col-md-12" style="margin-bottom: 10px;">
+					<button ng-click="join()" class="btn btn-success btn-block">Join</button>
+				</div>
+				<div class="col-md-12" style="margin-bottom: 10px;">
+					<button ng-click="start()" class="btn btn-warning btn-block">Start</button>
+				</div>
+				<div class="col-md-12">
+					<button ng-click="submit()" class="btn btn-danger btn-block">Submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="panel panel-default">
+			<div class="panel-heading">Members</div>
+			<div class="panel-body">
+				<table class="table table-striped">
+			        <thead>
+						<tr>
+						<th>Name</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="user in users">
+							<td>{{user.username}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
